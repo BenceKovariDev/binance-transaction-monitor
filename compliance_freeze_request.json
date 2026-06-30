@@ -1,0 +1,13 @@
+{
+    "request_type": "EMERGENCY_ASSET_FREEZE_AND_REPORT",
+    "target_contract": "0xc82b74532f417cc47fb14f0894d1b216d72f8888",
+    "evidence_tx_hash": "0x21809b1871...",
+    "reason_category": "IMPERSONATION_AND_PHISHING_SCAM",
+    "detailed_reason": "Known malicious actor interacting with scam contract",
+    "action_required": [
+        "BLOCK_ALL_DEPOSITS_FROM_THIS_CONTRACT_ON_BINANCE",
+        "BLOCK_ALL_WITHDRAWALS_TO_THIS_CONTRACT_ON_BINANCE",
+        "SUBMIT_OFFICIAL_REPORT_TO_BSCSCAN_FOR_PUBLIC_FLAGGING"
+    ],
+    "investigator": "Bence K\u0151v\u00e1ri (Compliance Tech Specialist)"
+}
