@@ -27,3 +27,14 @@ To run this simulation inside an isolated Linux/Ubuntu environment (e.g., UserLA
    ```bash
    git clone [https://github.com/BenceKovariDev/binance-transaction-monitor.git](https://github.com/BenceKovariDev/binance-transaction-monitor.git)
    cd binance-transaction-monitor
+
+## 📊 Compliance Workflow
+
+[New Deployments] ──> [Scam Hunter] ──> Keyword/Heuristic Match?
+│
+└──> [YES] ──> Append to Active Blacklist
+│
+[On-Chain TX Log] ──> [Rule Engine] <──────────────────────────────┘
+│
+└──> Match Found? ──> [YES] ──> Trigger Critical Alert
+└──> Generate Freeze JSON
