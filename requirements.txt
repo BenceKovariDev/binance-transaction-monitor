@@ -1,0 +1,3 @@
+# Project dependencies
+# This engine utilizes the Python 3 standard library only (sqlite3, datetime).
+# No external third-party libraries required.
