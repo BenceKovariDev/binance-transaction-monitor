@@ -4,18 +4,20 @@ An automated backend utility designed to monitor smart contract interactions on 
 
 ## 🚀 Key Features
 
-- **On-Chain Risk Analysis:** Real-time checking of transactions against known fraudulent smart contract addresses (e.g., impersonating tokens/phishing architectures).
+- **Heuristic Scam Hunting (New):** Automated proactive scanning of newly deployed smart contracts to flag potential impersonation or phishing attacks (e.g., fraudulent contracts abusing brands like Binance, BUSD, USDT) using advanced keyword pattern matching.
+- **On-Chain Risk Analysis:** Real-time checking of transactions against known fraudulent smart contract addresses.
 - **Blacklist & Pattern Matching:** Sophisticated lookup logic verifying if interactions originate from previously flagged or blacklisted malicious wallets.
 - **Automated Incident Response:** Automatically generates standardized Compliance Asset Freeze Requests (`compliance_freeze_request.json`) to simulate exchange-level account isolation, blocking deposits/withdrawals immediately upon high-risk detection.
 - **Automated Test Coverage:** Complete pipeline verification implemented via `pytest` framework, ensuring strict logic enforcement across clean, medium-risk, and high-risk traffic.
 
 ## 📁 Repository Structure
 
-- `szerződésmonitor.py` / `monitor.py`: Core transactional scanning and filtering business logic.
+- `scam_hunter.py`: Automated proactive script searching for newly deployed fraudulent contract architectures.
+- `contract_monitor.py` / `monitor.py`: Core transactional scanning and filtering business logic.
 - `test_monitor.py`: Automated testing architecture checking edge-cases and risk levels.
-- `compliance_free_request.json`: Structured output representing official internal freeze and block compliance requests.
-- `adatbázis.py`: Simulated ledger tracking registered high-risk addresses.
-- `követelmények.txt`: Backend dependency environment setup file.
+- `compliance_freeze_request.json`: Structured output representing official internal freeze and block compliance requests.
+- `database.py`: SQLite relational database tracking user risk metrics and historical transactions.
+- `requirements.txt`: Backend dependency environment setup file.
 
 ## 🛠️ Setup & Local Execution
 
